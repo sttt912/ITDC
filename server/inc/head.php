@@ -17,6 +17,7 @@
                     <ul>
                         <li><a href="add.php">Добавить</a></li>
                         <li><a href="list.php">Список</a></li>
+						<li><a href="search.php">Поиск</a></li>
                     </ul>
                   
                 </div>
