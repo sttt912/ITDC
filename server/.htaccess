@@ -3,3 +3,8 @@ RewriteRule ^(.*)\.html$ $1.php [nc]
 
 
 AddType text/cache-manifest .manifest
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/cache-manifest "access plus 0 seconds"
+</IfModule>

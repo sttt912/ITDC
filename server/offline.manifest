@@ -11,6 +11,9 @@ NETWORK:
 
 FALLBACK:
 
-/add.html
-/list.html
-/search.html
+add.html
+list.html
+search.html
+add.php
+list.php
+search.php
