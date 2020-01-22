@@ -2,13 +2,14 @@
 include("inc/conect.php");
 include("inc/head.php");
 include("inc/func.php"); 
-  
+
+echo '<script src="/js/online.js"></script>';
 $search_q=$_POST['search_q'];	
 
-if(!isset($_POST['search_q'])) { 
-	include("inc/search.php");  
-}  
- 
+if(!isset($_POST["search_q"])) {
+	include("inc/search.php");
+}
+
 if(isset($_POST['search_q'])) { 
 	$search_q = trim($search_q);
 	$search_q = strip_tags($search_q);
@@ -22,6 +23,6 @@ if(isset($_POST['search_q'])) {
 	mysqli_free_result($s);
 	mysqli_close($link);
 }
+
 include("inc/foot.php");
 ?>
-

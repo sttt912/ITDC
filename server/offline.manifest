@@ -1,16 +1,15 @@
-CACHE MANIFEST CACHE:
+CACHE MANIFEST 
+js/online.js
 
+CACHE:
 css/demo.css
 css/demo.js
 css/open.png
 css/snap.css
 css/snap.js
 
+
 NETWORK:
-*
-
-FALLBACK:
-
 add.html
 list.html
 search.html
