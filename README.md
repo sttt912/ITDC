@@ -1,5 +1,5 @@
 Example (server):<br/>
-https://servakos.tk/add.html<br/>
+http://servakos.tk/add.html<br/>
 
 Для основної роботи використовується: <b>php/mysql</b> <br/>
 Для перевірки роботи online/offline використовується:<br/>
