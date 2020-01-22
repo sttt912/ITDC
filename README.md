@@ -5,7 +5,8 @@ http://servakos.tk/add.html<br/>
 Для перевірки роботи online/offline використовується:<br/>
 http://pixelscommander.com/ru/javascript/onlinejs-javascript-internet-connection/<br/>
 Для роботи з кешуванням: <b>offline.manifest</b>, <b>localstorage</b>, <b>jquery</b><br/>
-
+Інтерфейс працює за допомогою <b>Snap.js</b>:<br/>
+http://jakiestfu.github.io/Snap.js/demo/apps/default.html
 
 Частина клієнтського додатка зроблена за допомогою <b>WebView</b>.
 Клас <b>WebView</b> є розширенням класу <b>View</b> від <b>Android</b>, що дозволяє відображати веб-сторінки.
