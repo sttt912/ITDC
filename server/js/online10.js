@@ -18,7 +18,7 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
     w.onLineCheckTimeout = 5000;
 
     //Use window.onLineURL incapsulated variable
-    w.onlinejs._onLineURL = "http://offlinejs.com/online.php";
+    w.onlinejs._onLineURL = "https://zslon.org/zakazik/online.php";
 
     w.onlinejs.setOnLineURL = function (newURL) {
         w.onlinejs._onLineURL = newURL;
@@ -61,7 +61,7 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
     }
 
     w.onlinejs.getOnLineCheckURL = function () {
-        return w.onlinejs._onLineURL + '?' + Date.now();
+        return w.onlinejs._onLineURL + '?' + Math.floor(Math.random() * 1000000);
     }
 
     w.onlinejs.getStatusFromNavigatorOnLine = function () {

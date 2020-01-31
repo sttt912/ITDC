@@ -2,16 +2,15 @@
 include("inc/conect.php");
 include("inc/head.php");
 
-echo '<script src="/js/online.js"></script>';
+echo '<script src="/js/online10.js"></script>';
 echo '<script src="http://code.jquery.com/jquery-latest.js"></script>';
 
 include("inc/func.php"); 
 include("inc/form.php"); 
 
-echo"<script>window.onLineHandler = function(){ 
-		//код для отправки на сервер, поки нема
-		getdetails();
-		localStorage.clear();
+echo"<script>window.onLineHandler = function(){
+		//getdetails();
+		//localStorage.clear();
 }";
 echo"window.offLineHandler = function(){
 	//код оброботчика офлайн
@@ -32,13 +31,13 @@ function getdetails(){
         url: 'post.php',
         data: {fname:name, id:rno}
     }).done(function(result)
-        {alerrt('done');
+        {alert('done');
         });
 }
 	
 	</script>";
 
-
+echo "<div id='msg'></div>";
 
 include("inc/foot.php");
 ?>

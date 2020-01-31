@@ -17,7 +17,7 @@
         <td><input type="text" id="status" name="status" value="<?= isset($_GET['red']) ? $product['status'] : ''; ?>"></td>
       </tr>
       <tr>
-        <td colspan="2"><input type="submit" value="OK" onclick="offline()"></td>
+        <td colspan="2"><input type="submit" value="OK" onclick="getdetails()"></td>
       </tr>
     </table>
   </form>

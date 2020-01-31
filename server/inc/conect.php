@@ -1,8 +1,10 @@
 <?php
+ header("Access-Control-Allow-Origin: *");
+ 
     $host = 'localhost';  // Хост
-    $user = 'user';    // Имя пользователя
-    $pass = 'pass'; // пароль
-    $db_name = 'bd';   //bd
+    $user = '';    // Имя пользователя
+    $pass = ''; // пароль
+    $db_name = '';   //bd
     $link = mysqli_connect($host, $user, $pass, $db_name); // conect
 	
 	

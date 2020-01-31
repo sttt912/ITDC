@@ -4,7 +4,7 @@ include("inc/head.php");
 include("inc/func.php"); 
 
 
-echo '<script src="js/online.js"></script>';
+echo '<script src="js/online10.js"></script>';
 
 echo '<script>	';		
 echo 'window.offLineHandler = function(){ ';

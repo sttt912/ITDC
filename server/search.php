@@ -3,7 +3,7 @@ include("inc/conect.php");
 include("inc/head.php");
 include("inc/func.php"); 
 
-echo '<script src="/js/online.js"></script>';
+echo '<script src="/js/online10.js"></script>';
 $search_q=$_POST['search_q'];	
 
 if(!isset($_POST["search_q"])) {
