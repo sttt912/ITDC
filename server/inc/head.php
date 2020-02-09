@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" manifest="/offline.manifest">
+<html lang="en">
     <head>
         <title>Test</title>
         <meta http-equiv="x-ua-compatible" content="IE=edge" />
@@ -17,7 +17,9 @@
                     <ul>
                         <li><a href="add.html">Добавить</a></li>
                         <li><a href="list.html">Список</a></li>
+						<li><a href="check.html">Кабінет</a></li>
 						<li><a href="search.html">Поиск</a></li>
+						<li><a href="logout.html">Выйти</a></li>
                     </ul>
                   
                 </div>

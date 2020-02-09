@@ -3,7 +3,8 @@ include("inc/conect.php");
 include("inc/head.php");
 include("inc/func.php"); 
 
-
+if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
+	
 echo '<script src="js/online10.js"></script>';
 
 echo '<script>	';		
@@ -14,11 +15,17 @@ echo '</script>';
 
 
   $sql = mysqli_query($link, 'SELECT `ID`, `numbers`, `driver`, `spu`, `status` FROM `transport`');
-  echo "<p id='online_title'> ";
+
+      echo "<p id='online_title'> ";
   while ($result = mysqli_fetch_array($sql)) {
     echo "{$result['ID']})||{$result['numbers']}||{$result['driver']}||{$result['spu']}||{$result['status']}
 	- <a href='?del={$result['ID']}'>Удалить</a> ||<a href='?red={$result['ID']}'>Редактировать</a><br/><br/>";
   }
   echo "</p>";
+  
+}else{
+    print "Тільки для авторизованих";
+}
+
 include("inc/foot.php");
 ?>

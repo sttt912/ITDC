@@ -1,7 +1,8 @@
 <?  
 include("inc/conect.php");
 include("inc/head.php");
-
+if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
+	
 echo '<script src="/js/online10.js"></script>';
 echo '<script src="http://code.jquery.com/jquery-latest.js"></script>';
 
@@ -11,8 +12,9 @@ include("inc/form.php");
 echo"<script>window.onLineHandler = function(){
 		//getdetails();
 		//localStorage.clear();
-}";
-echo"window.offLineHandler = function(){
+}
+
+window.offLineHandler = function(){
 	//код оброботчика офлайн
 };
 
@@ -38,6 +40,8 @@ function getdetails(){
 	</script>";
 
 echo "<div id='msg'></div>";
-
+}else{
+    print "Тільки для авторизованих";
+}
 include("inc/foot.php");
 ?>

@@ -9,7 +9,7 @@
 	
 	
 	if (!$link) {
-      echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
+      echo 'Не можу підєднатися до БД. Помилка: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
       exit;
     }
  ?>
