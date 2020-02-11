@@ -1,14 +1,6 @@
 <?php
-$name = $_POST['fname'];
-$rno = $_POST['id'];
-$result = $_POST['id'];
+include("inc/conect.php");
 
+$sql = mysqli_query($link, "INSERT INTO `transport` (`numbers`, `driver`, `spu`, `status`, `user_id`, `states`) VALUES ('{$_POST['fname']}', '{$_POST['id']}', '{$_POST['fname1']}', '{$_POST['if1']}', '0', 'offline' )");
 
-$filename = 'somefile.txt';
-//записываем текст в файл
-file_put_contents($filename, $name);
-//потом его можно прочитать из файла
-$text = file_get_contents($filename);
-
-echo $result;
 ?>

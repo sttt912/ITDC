@@ -1,8 +1,8 @@
 <?  
 include("inc/conect.php");
 include("inc/head.php");
-if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
-	
+
+echo '<html lang="en" manifest="/offline.manifest">';
 echo '<script src="/js/online10.js"></script>';
 echo '<script src="http://code.jquery.com/jquery-latest.js"></script>';
 
@@ -10,8 +10,11 @@ include("inc/func.php");
 include("inc/form.php"); 
 
 echo"<script>window.onLineHandler = function(){
-		//getdetails();
-		//localStorage.clear();
+	let i = 0;
+while (i < 1) { // выводит 0, затем 1, затем 2
+  getdetails();
+  i++;
+}	
 }
 
 window.offLineHandler = function(){
@@ -28,10 +31,12 @@ function offline() {
 function getdetails(){
     var name = $('#numbers').val();
     var rno = $('#driver').val();
+	var name2 = $('#spu').val();
+    var rno1 = $('#status').val();
     $.ajax({
         type: 'POST',
         url: 'post.php',
-        data: {fname:name, id:rno}
+        data: {fname:name, id:rno, fname1:name1, id1:rno1}
     }).done(function(result)
         {alert('done');
         });
@@ -40,8 +45,6 @@ function getdetails(){
 	</script>";
 
 echo "<div id='msg'></div>";
-}else{
-    print "Тільки для авторизованих";
-}
+
 include("inc/foot.php");
 ?>

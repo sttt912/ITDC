@@ -145,5 +145,5 @@ body {
   </div>
   <p><input name="submit" type="submit" value="Увійти"></p>
 </form>
-
+<center><a href="https://servakos.tk/face.php">Авторизуватись через обличчя</a></center>
 </html>

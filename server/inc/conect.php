@@ -1,7 +1,7 @@
 <?php
  header("Access-Control-Allow-Origin: *");
  
-    $host = 'localhost';  // Хост
+    $host = '';  // Хост
     $user = '';    // Имя пользователя
     $pass = ''; // пароль
     $db_name = '';   //bd
@@ -9,7 +9,7 @@
 	
 	
 	if (!$link) {
-      echo 'Не можу підєднатися до БД. Помилка: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
+      echo 'Не можу підключитись до БД. Код помилки: ' . mysqli_connect_errno() . ', Помилка: ' . mysqli_connect_error();
       exit;
     }
  ?>
