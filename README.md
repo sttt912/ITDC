@@ -7,5 +7,5 @@
 http://pixelscommander.com/ru/javascript/onlinejs-javascript-internet-connection/<br/>
 Для роботи з кешуванням: <b>offline.manifest</b>, <b>localstorage</b>, <b>jquery</b><br/>
 Інтерфейс працює за допомогою <b>Snap.js</b>:<br/>
-http://jakiestfu.github.io/Snap.js/demo/apps/default.html
+http://jakiestfu.github.io/Snap.js/
 
