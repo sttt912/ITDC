@@ -22,8 +22,8 @@ if(isset($_POST['submit'])){
             $insip = ", user_ip=INET_ATON('".$_SERVER['REMOTE_ADDR']."')";
         }
         mysqli_query($link, "UPDATE users SET user_hash='".$hash."' ".$insip." WHERE user_id='".$data['user_id']."'");
-        setcookie("id", $data['user_id'], time()+60*60*24*30, "/");
-        setcookie("hash", $hash, time()+60*60*24*30, "/", null, null, true); // httponly !!!
+        setcookie("id", $data['user_id']);
+        setcookie("hash", $hash, time()+3600); // httponly !!!
         header("Location: check.php"); exit();
     }else{
         print "<center>Ви ввели невірний логін/пароль</center>";
