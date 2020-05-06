@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en"  manifest="offline.manifest">
+<html lang="en">
     <head>
         <title>CASERS</title>
         <meta http-equiv="x-ua-compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
                         <li><a href="http://servakos.tk/list.html">Список</a></li>
 						<li><a href="http://servakos.tk/check.html">Кабінет</a></li>
 						<li><a href="http://servakos.tk/search.html">Пошук</a></li>
-						<li><a href="http://servakos.tk/logout.html">Вийти</a></li>
+						<li><a href="/logout.html">Вийти</a></li>
                     </ul>
                   
                 </div>

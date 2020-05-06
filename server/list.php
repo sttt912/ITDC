@@ -3,7 +3,7 @@ table {
 font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 font-size: 14px;
 border-collapse: collapse;
-text-align: center;
+margin: auto;
 }
 th, td:first-child {
 background: #AFCDE7;
@@ -18,6 +18,7 @@ border-color: white;
 }
 td {
 background: #D8E6F3;
+text-align: center;
 }
 th:first-child, td:first-child {
 text-align: left;

@@ -22,8 +22,10 @@ if(isset($_POST['submit'])){
             $insip = ", user_ip=INET_ATON('".$_SERVER['REMOTE_ADDR']."')";
         }
         mysqli_query($link, "UPDATE users SET user_hash='".$hash."' ".$insip." WHERE user_id='".$data['user_id']."'");
-        setcookie("id", $data['user_id']);
-        setcookie("hash", $hash, time()+3600); // httponly !!!
+        //setcookie("id", $data['user_id']);
+        //setcookie("hash", $hash, time()+3600); // httponly !!!
+		setcookie("id", $data['user_id'], time()+60*60*24*30, "/");
+        setcookie("hash", $hash, time()+60*60*24*30, "/");
         header("Location: check.php"); exit();
     }else{
         print "<center>Ви ввели невірний логін/пароль</center>";
@@ -39,9 +41,10 @@ if(isset($_POST['submit'])){
         <meta name="apple-touch-fullscreen" content="yes">
 <style type="text/css">
 * {box-sizing: border-box;}
+
 body {
   background: #BFC7D8;
-  font-family: 'Roboto', sans-serif;
+
 }
 .ui-form {
   max-width: 350px;
@@ -145,5 +148,5 @@ body {
   </div>
   <p><input name="submit" type="submit" value="Увійти"></p>
 </form>
-<center><a href="https://servakos.tk/face.php">Авторизуватись через обличчя</a></center>
+<center><a href="face.php">Авторизуватись через обличчя</a></center>
 </html>
